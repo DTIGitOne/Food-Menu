@@ -41,3 +41,35 @@
    border-top-right-radius: 25px;
    border-bottom-right-radius: 25px;
 }
+
+.location {
+   height: 1500px;
+}
+
+.box-round1 {
+   border-top-left-radius: 40px;
+   border-bottom-left-radius: 40px;
+   box-sizing: border-box;
+   color: white;
+}
+
+.box-round2 {
+   border-top-right-radius: 40px;
+   border-bottom-right-radius: 40px;
+   box-sizing: border-box;
+   color: white;
+}
+
+.borderMap {
+   border: 7px solid white;
+}
+
+.contact {
+   height: 1000px;
+}
+
+.infoBox {
+   height: 50%;
+   box-sizing: border-box;
+   border-radius: 25px;
+}
