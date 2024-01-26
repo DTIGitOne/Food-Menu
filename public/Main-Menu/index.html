@@ -2,18 +2,21 @@
 <html class="h-full w-full">
 <head>
    <title>Food Menu</title>
-   <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="styles2.css">
+   <link rel="stylesheet" href="/public/styles.css">
+   <link rel="stylesheet" href="/public/styles2.css ">
 </head>
 <body class="h-full w-full m-0">
-   <div id="root" class="h-auto w-full m-0 bg-orange-100 flex flex-col relative">
+   <div id="loadLogo" class="h-full w-full m-0 bg-orange-100 flex justify-center items-center z-50 absolute animationLoad">
+      <img src="/Icons/Chef.png">
+   </div>
+   <div id="root" class="h-auto w-full m-0 bg-orange-100 hidden flex-col relative">
       <div id="selctionMenu" class="selctionMenu w-full flex items-center hover:bg-orange-200">
          <img src="/Icons/icons8-menu-100.png" width="80px" height="80px" class="inline m-10">
       </div>
       <div id="popUpMenu" class="popUpMenu">
-         <a href="index.html" id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</a>
-         <a href="index2,html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
-         <div class="popUpInner hover:bg-orange-200">About</div>
+         <a href="/public/Main-Menu/index.html" id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</a>
+         <a href="/public/Contact/index2.html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
+         <a href="/public/About/about.html" class="popUpInner hover:bg-orange-200">About</a>
          <div class="popUpInner hover:bg-orange-200">Other</div>
       </div>
       <div id="itemsMenu" class="itemsMenu w-full flex flex-col gap-24 items-center">

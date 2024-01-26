@@ -1,6 +1,23 @@
 let selctionMenu = document.getElementById("selctionMenu");
 let popUpMenu = document.getElementById("popUpMenu");
 
+let loadLogo = document.getElementById("loadLogo");
+let root2 = document.getElementById("root2");
+
+function hideLoad() {
+   loadLogo.classList.add('LoadHide');
+}
+
+   function siteLoadFunc() {
+      root2.className = "h-auto w-full m-0 bg-orange-100 flex flex-col realative";
+      loadLogo.classList.add('LoadHide');
+      setInterval(() => {
+         loadLogo.remove();
+      }, 800);
+  }
+  setTimeout(siteLoadFunc, 1500);
+
+
 selctionMenuCount = 0;
 
 selctionMenu.addEventListener('click' , function() {

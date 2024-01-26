@@ -2,18 +2,21 @@
 <html class="h-full w-full">
 <head>
    <title>Contact</title>
-   <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="styles2.css">
+   <link rel="stylesheet" href="/public/styles.css">
+   <link rel="stylesheet" href="/public/styles2.css">
 </head>
-<body class="h-full w-full m-0">
-   <div id="root2" class="h-auto w-full m-0 bg-orange-100 flex flex-col relative">
+<body class="h-full w-full m-0 relative">
+   <div id="loadLogo" class="h-full w-full m-0 bg-orange-100 flex justify-center items-center z-50 absolute animationLoad">
+      <img src="/Icons/Chef.png">
+   </div>
+   <div id="root2" class="h-auto w-full m-0 bg-orange-100 hidden flex-col relative">
       <div id="selctionMenu" class="selctionMenu w-full flex items-center hover:bg-orange-200">
          <img src="/Icons/icons8-menu-100.png" width="80px" height="80px" class="inline m-10">
       </div>
       <div id="popUpMenu" class="popUpMenu">
-         <div id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</div>
-         <a href="index2,html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
-         <div class="popUpInner hover:bg-orange-200">About</div>
+         <a href="/public/Main-Menu/index.html" id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</a>
+         <a href="/public/Contact/index2.html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
+         <a href="/public/About/about.html" class="popUpInner hover:bg-orange-200">About</a>
          <div class="popUpInner hover:bg-orange-200">Other</div>
       </div>
       <div id="location" class="location w-full">
@@ -32,9 +35,15 @@
          </div>
          <div class="h-full bg-orange-100 flex justify-center items-center">
             <div class="infoBox w-2/3 bg-orange-200 flex flex-col">
-               <div class="h-2/3 w-full"></div>
+               <div class="h-2/3 w-full flex flex-col justify-around text-4xl pl-5">
+                  <div class="font-bold mt-1">Email:</div>
+                  <div>contact@gmail.com</div>
+                  <div class="font-bold">Contact Number:</div>
+                  <div>061-000-000</div>
+                  <div class="font-bold">Links:</div>
+               </div>
                <div class="flex grow items-center pl-5 mt-5">
-                  <a href="https://www.instagram.com/">
+                  <a href="https://www.instagram.com/gordonramsayrestaurants/?hl=en">
                      <img src="/Icons/instagram.png" width="90px" height="90px">
                   </a>
                </div>
