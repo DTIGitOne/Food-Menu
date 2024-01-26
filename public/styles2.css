@@ -32,6 +32,9 @@
    display: none;
    flex-direction: column;
    gap: 15px;
+   animation: popupanimation;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
 }
 
 .popUpInner {
@@ -158,4 +161,71 @@
 
 #igLinkBox {
    height: 400px;
+}
+
+.MainDishes {
+   height: 800px;
+   margin-bottom: 80px;
+}
+
+.SaladDishes {
+   height: 500px;
+   margin-bottom: 80px;
+}
+
+.HambDishes {
+   height: 600px;
+   margin-bottom: 80px;
+}
+
+.DessertDishes {
+   height: 500px;
+   margin-bottom: 80px;
+}
+
+.nonAlc {
+   height: 400px;
+   margin-bottom: 30px;
+}
+
+.fill-lines {
+   text-align: justify;
+   max-width: 920px; 
+}
+
+.fill-lines::after {
+   content: '';
+   display: inline-block;
+   width: 100%;
+}
+
+ul.pa-dot-leaders {
+   max-width: 32em;
+   padding: 0;
+   overflow-x: hidden;
+   list-style: none;
+   overflow-y: hidden;
+}
+
+ul.pa-dot-leaders li:before {
+   float: left;
+   width: 0;
+   white-space: nowrap;
+   content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+}
+
+ul.pa-dot-leaders span:first-child {
+   padding-right: 0.33em;
+   background: #ffedd5;
+}
+
+ul.pa-dot-leaders span + span {
+   float: right;
+   padding-left: 0.33em;
+   background: #ffedd5;
+}
+
+@keyframes popupanimation {
+   from {opacity: 0;}
+   to {opacity: 1;}
 }
