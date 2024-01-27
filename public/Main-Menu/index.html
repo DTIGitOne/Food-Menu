@@ -7,7 +7,7 @@
 </head>
 <body class="h-full w-full m-0">
    <div id="loadLogo" class="h-full w-full m-0 bg-orange-100 flex justify-center items-center z-50 absolute animationLoad">
-      <img src="/Icons/Chef.png">
+      <img src="/Icons/Chef.png" id="logoPic"> 
    </div>
    <div id="root" class="h-auto w-full m-0 bg-orange-100 hidden flex-col relative">
       <div id="selctionMenu" class="selctionMenu w-full flex items-center hover:bg-orange-200">
@@ -15,41 +15,49 @@
       </div>
       <div id="popUpMenu" class="popUpMenu">
          <a href="/public/Main-Menu/index.html" id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</a>
-         <a href="/public/Contact/index2.html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
-         <a href="/public/About/about.html" class="popUpInner hover:bg-orange-200">About</a>
-         <div class="popUpInner hover:bg-orange-200">Other</div>
+         <a href="/public/Contact/index2.html" id="locationContact" class="popUpInner hover:bg-orange-200">Location and Contact</a>
+         <a href="/public/About/about.html" id="about"  class="popUpInner hover:bg-orange-200">About</a>
       </div>
-      <div id="itemsMenu" class="itemsMenu w-full flex flex-col gap-24 items-center">
-         <div id="cardBox1" class="cardBox w-4/5 bg-black relative flex items-center justify-center">
-            <a href="/public/Menu/menu.html#DrinksText" class="peer absolute object-cover w-full h-full z-10 hover:opacity-40 transition-all">
+      <div id="popUpMenu2" class="popUpMenu"></div>
+      <div id="itemsMenu" class="itemsMenu w-full flex  gap-12 lg:gap-16 flex-col items-center">
+         <div class="fillSpace"></div>
+         <div id="cardBox1" class="cardBox w-4/5 lg:w-3/5 bg-black relative flex items-center justify-center">
+            <a href="/public/Menu/menu.html#MainText" class="peer absolute object-cover w-full h-full z-10 hover:opacity-40 transition-all">
                <img src="/pictures/Capture3.PNG" class="peer absolute object-cover w-full h-full z-10 transition-all">
             </a>
             <div class="font-pictureText textSize text-white absolute select-none hidden peer-hover:inline z-0">Main Dishes</div>
          </div>
-         <div id="cardBox2" class="cardBox w-4/5 bg-black relative flex items-center justify-center">
+         <div id="cardBox2" class="cardBox lg:w-3/5 w-4/5 bg-black relative flex items-center justify-center">
             <a href="/public/Menu/menu.html#SaladsText" class="peer absolute object-cover w-full h-full z-10 hover:opacity-40 transition-all">
                <img src="/pictures/Capture2.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10">
             </a>
             <div class="font-pictureText textSize text-white absolute select-none hidden peer-hover:inline z-0">Salads</div>
          </div>
-         <div id="cardBox" class="cardBox w-4/5 bg-black relative flex items-center justify-center">
-            <a href="" class="peer absolute object-cover w-full h-full z-10 hover:opacity-40 transition-all">
+         <div id="cardBox" class="cardBox lg:w-3/5 w-4/5 bg-black relative flex items-center justify-center">
+            <a href="/public/Menu/menu.html#HamburgersText" class="peer absolute object-cover w-full h-full z-10 transition-all">
                <img src="/pictures/Capture4.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
             </a>
             <div class="font-pictureText textSize text-white absolute select-none hidden peer-hover:inline z-0">Hamburgers</div>
          </div>
-         <div id="cardBox3" class="cardBox w-4/5 bg-black relative flex items-center justify-center">
-            <img src="/pictures/Capture.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
+         <div id="cardBox3" class="cardBox w-4/5 lg:w-3/5 bg-black relative flex items-center justify-center">
+            <a href="/public/Menu/menu.html#PastaText" class="peer absolute object-cover w-full h-full z-10 transition-all">
+               <img src="/pictures/Capture.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
+            </a>
             <div class="font-pictureText textSize text-white absolute select-none hidden peer-hover:inline z-0">Pasta</div>
          </div>
-         <div id="cardBox" class="cardBox w-4/5 bg-black relative flex items-center justify-center">
-            <img src="/pictures/Capture6.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
+         <div id="cardBox" class="cardBox w-4/5 lg:w-3/5 bg-black relative flex items-center justify-center">
+            <a href="/public/Menu/menu.html#DesertsText" class="peer absolute object-cover w-full h-full z-10 transition-all">
+               <img src="/pictures/Capture6.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
+            </a>
             <div class="font-pictureText textSize text-white absolute select-none hidden peer-hover:inline z-0">Desserts</div>
          </div>
-         <div id="cardBox3" class="cardBox w-4/5 bg-black relative flex items-center justify-center">
-            <img src="/pictures/Capture5.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
+         <div id="cardBox3" class="cardBox lg:w-3/5 w-4/5 bg-black relative flex items-center justify-center">
+            <a href="/public/Menu/menu.html#DrinksText" class="peer absolute object-cover w-full h-full z-10 transition-all">
+               <img src="/pictures/Capture5.PNG" class="peer backgroundPicture absolute object-cover w-full h-full z-10 hover:opacity-40">
+            </a>
             <div class="font-pictureText textSize text-white absolute select-none hidden peer-hover:inline z-0">Drinks</div>
          </div>
+         <div class="fillSpace"></div>
       </div>
       <div class="addonSpace"></div>
    </div>

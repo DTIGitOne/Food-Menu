@@ -4,20 +4,20 @@ let popUpMenu = document.getElementById("popUpMenu");
 selctionMenuCount = 0;
 
 let loadLogo = document.getElementById("loadLogo");
-let root = document.getElementById("root");
+let root = document.getElementById("root2");
 
 function hideLoad() {
    loadLogo.classList.add('LoadHide');
 }
 
    function siteLoadFunc() {
-      root.className = "h-auto w-full m-0 bg-orange-100 flex flex-col realative";
+      root.className = "h-auto w-full m-0 bg-orange-100 flex visible flex-col realative";
       loadLogo.classList.add('LoadHide');
       setInterval(() => {
          loadLogo.remove();
-      }, 800);
+      }, 1000);
   }
-  setTimeout(siteLoadFunc, 1500);
+  setTimeout(siteLoadFunc, 400);
 
 selctionMenu.addEventListener('click' , function() {
    selctionMenuCount++

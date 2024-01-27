@@ -26,7 +26,19 @@
 }
 
 .popUpMenu {
-   height: 500px;
+   height: 350px;
+   margin-bottom: 110px;
+   font-size: 50px;
+   display: none;
+   flex-direction: column;
+   gap: 15px;
+   animation: popupanimation;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+}
+
+.popUpMenu2 {
+   height: 350px;
    margin-bottom: 110px;
    font-size: 50px;
    display: none;
@@ -225,7 +237,105 @@ ul.pa-dot-leaders span + span {
    background: #ffedd5;
 }
 
+.fillSpace {
+   height: 100px;
+}
+
 @keyframes popupanimation {
    from {opacity: 0;}
    to {opacity: 1;}
+}
+
+@media (min-width: 1024px) {
+   #root {
+      flex-direction: row;
+      height: 100%;
+      justify-content: center;
+      gap: 100px;
+      overflow-y: scroll;
+   }
+   .addonSpace {
+      display: none;
+   }
+   #selctionMenu {
+      display: none;
+   }
+   #popUpMenu {
+      display: flex;
+      background-color: #fed7aa;
+      height: 100%;
+      font-size: 25px;
+      width: 20%;
+      text-align: end;
+      justify-content: center;
+      align-items: flex-end;
+      position: fixed;
+      left: 200px;
+   }
+   #popUpMenu2 {
+      display: flex;
+   }
+   #itemsMenu {
+      width: 40%;
+      flex-grow: unset;
+      height: 1800px;
+   }
+   .textSize {
+      font-size: 70px;
+   }
+   #menuPage:hover {
+      background-color: #fdba74;
+   }
+   #locationContact:hover {
+      background-color: #fdba74;
+   }
+   #about:hover {
+      background-color: #fdba74;
+   }
+   .popUpInner {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+   }
+   #menuPage {
+      padding-right: 12px;
+      padding-top: 5px;
+      margin-top: 0px;
+   }
+   #locationContact {
+      padding-right: 12px;
+      padding-top: 5px;
+   }
+   #about {
+      padding-right: 12px;
+      padding-top: 5px;
+   }
+   ::-webkit-scrollbar {
+      width: 15px;
+   }
+   ::-webkit-scrollbar-track {
+      background: #ffedd5;
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 30px;
+   }
+   ::-webkit-scrollbar-thumb {
+      background: #fdba74;
+      border-radius: 30px;
+    }
+    #logoPic {
+      height: 250px;
+      width: 250px;
+    }
+
+
+    #root2 {
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+    }
+    #fullMenu {
+      width: 50%;
+    }
+    
 }
