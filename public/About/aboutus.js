@@ -2,14 +2,14 @@ let selctionMenu = document.getElementById("selctionMenu");
 let popUpMenu = document.getElementById("popUpMenu");
 
 let loadLogo = document.getElementById("loadLogo");
-let root3 = document.getElementById("root3");
+let root3 = document.getElementById("root4");
 
 function hideLoad() {
    loadLogo.classList.add('LoadHide');
 }
 
    function siteLoadFunc() {
-      root3.className = "h-auto w-full m-0 bg-orange-100 flex flex-col realative";
+      root3.className = "h-auto w-full m-0 bg-orange-100 visible flex flex-col realative";
       loadLogo.classList.add('LoadHide');
       setInterval(() => {
          loadLogo.remove();

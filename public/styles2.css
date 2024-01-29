@@ -47,6 +47,7 @@
 
 .location {
    height: 1500px;
+   width: 100%;
 }
 
 .box-round1 {
@@ -241,8 +242,16 @@ ul.pa-dot-leaders span + span {
 ::-webkit-scrollbar-thumb {
    background: #fdba74;
    border-radius: 30px;
- }
+}
 
+.heightForDekstop {
+   height: auto;
+   width: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+ 
 @keyframes popupanimation {
    from {opacity: 0;}
    to {opacity: 1;}
@@ -352,13 +361,14 @@ ul.pa-dot-leaders span + span {
    }
    #popUpMenu4 {
       display: flex;
-      height: 1700px;
+      height: 1750px;
       width: 330px;
       margin: 0;
     }
     .heightForDekstop {
-      width: 1350px;
+      width: 1580px;
       margin-top: 80px;
+      gap: 45px;
     }
     .location {
       height: 1000px;
@@ -370,12 +380,36 @@ ul.pa-dot-leaders span + span {
     }
     .infoBox {
       width: 35%;
-      margin-top: 100px;
       padding: 5px;
-      height: 300px;
+      height: 270px;
       font-size: 10px;
     }
     .contact {
-      height: 400px;
+      height: 700px;
+    }
+    #root4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    #popUpMenu5 {
+      height: 3700px;
+      width: 330px;
+      margin: 0;
+    }
+    #divall {
+      width: 70%;
+    }
+    .borderMap {
+      margin: 0;
+    }
+    #location {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    #boxLocation {
+      height: 110px;
     }
 }
