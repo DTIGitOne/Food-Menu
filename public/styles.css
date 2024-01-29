@@ -700,10 +700,6 @@ video {
   gap: 3rem;
 }
 
-.gap-24{
-  gap: 6rem;
-}
-
 .gap-8{
   gap: 2rem;
 }
@@ -864,27 +860,34 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:h-52{
-    height: 13rem;
+  .lg\:visible{
+    visibility: visible;
   }
 
-  .lg\:h-36{
-    height: 9rem;
+  .lg\:invisible{
+    visibility: hidden;
   }
 
-  .lg\:w-2\/4{
-    width: 50%;
+  .lg\:mr-32{
+    margin-right: 8rem;
   }
 
-  .lg\:w-2\/5{
-    width: 40%;
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
 
-  .lg\:w-3\/5{
-    width: 60%;
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .lg\:gap-16{
-    gap: 4rem;
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

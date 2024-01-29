@@ -2,7 +2,7 @@ let selctionMenu = document.getElementById("selctionMenu");
 let popUpMenu = document.getElementById("popUpMenu");
 
 let loadLogo = document.getElementById("loadLogo");
-let root2 = document.getElementById("root2");
+let root2 = document.getElementById("root3");
 
 function hideLoad() {
    loadLogo.classList.add('LoadHide');

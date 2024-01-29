@@ -15,9 +15,12 @@ function hideLoad() {
       loadLogo.classList.add('LoadHide');
       setInterval(() => {
          loadLogo.remove();
-      }, 1000);
+      }, 800);
+      setInterval(() => {
+         popUpMenu.className = "popUpMenu lg:visible";
+      }, 300);
   }
-  setTimeout(siteLoadFunc, 400);
+  setTimeout(siteLoadFunc, 1500);
 
 selctionMenu.addEventListener('click' , function() {
    selctionMenuCount++

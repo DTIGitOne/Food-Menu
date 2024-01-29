@@ -7,21 +7,21 @@
 </head>
 <body class="h-full w-full m-0">
    <div id="loadLogo" class="h-full w-full m-0 bg-orange-100 flex justify-center items-center z-50 fixed animationLoad">
-      <img src="/Icons/Chef.png">
+      <img src="/Icons/Chef.png" id="logoPic">
    </div>
    <div id="root2" class="h-auto w-full m-0 bg-orange-100 invisible flex flex-col relative">
       <div id="selctionMenu" class="selctionMenu w-full flex items-center hover:bg-orange-200">
          <img src="/Icons/icons8-menu-100.png" width="80px" height="80px" class="inline m-10">
       </div>
-      <div id="popUpMenu" class="popUpMenu">
+      <div id="popUpMenu" class="popUpMenu lg:invisible">
          <a href="/public/Main-Menu/index.html" id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</a>
-         <a href="/public/Contact/index2.html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
-         <a href="/public/About/about.html" class="popUpInner hover:bg-orange-200">About</a>
+         <a href="/public/Contact/index2.html" id="locationContact" class="popUpInner hover:bg-orange-200">Location and Contact</a>
+         <a href="/public/About/about.html" id="about" class="popUpInner hover:bg-orange-200">About</a>
       </div>
-      <div id="popUpMenu2" class="popUpMenu"></div>
-      <div id="fullMenu">
-         <div id="MainText" class="h-40 w-full text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl">Main Dishes</div></div>
-      <div id="MainDishes" class="pl-3 text-3xl mt-16 MainDishes">
+      <div id="popUpMenu3" class="popUpMenu"></div>
+      <div id="fullMenu" class="flex flex-col justify-center pl-5px">
+         <div id="MainText" class="select-none h-40 w-full lg:text-6xl text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl lg:mr-32">Main Dishes</div></div>
+      <div id="MainDishes" class="pl-3 lg:text-xl text-3xl mt-16 MainDishes">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Oven Baked Chicken Drumsticks</span><span>25KM</span></li>
             <li><span>Spiced Rubbed Turkey Tenderloin With Gravy</span><span>35KM</span></li>
@@ -37,8 +37,8 @@
             <li><span>Pasta With Shrimp And Tomato Cream Sauce</span><span>35KM</span></li>    
          </ul>
       </div>
-      <div id="SaladsText" class="h-40 w-full text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl">Salads</div></div>
-      <div id="SaladsDish" class="pl-3 text-3xl mt-16 SaladDishes">
+      <div id="SaladsText" class="select-none h-40 w-full lg:text-6xl text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl lg:mr-32">Salads</div></div>
+      <div id="SaladsDish" class="pl-3 lg:text-xl text-3xl mt-16 SaladDishes">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Arugula Salad with Lemon Vinaigrette</span><span>25KM</span></li>
             <li><span>Homemade Caesar Salad</span><span>35KM</span></li>
@@ -50,8 +50,8 @@
             <li><span>Classic Caprese Salad</span><span>35KM</span></li>
          </ul>
       </div>
-      <div id="HamburgersText" class="h-40 w-full text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl">Hamburgers</div></div>
-      <div id="HamburgersDish" class="pl-3 text-3xl mt-16 HambDishes">
+      <div id="HamburgersText" class="select-none h-40 w-full lg:text-6xl text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl lg:mr-32">Hamburgers</div></div>
+      <div id="HamburgersDish" class="pl-3 lg:text-xl text-3xl mt-16 HambDishes">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Next-Level Turkey Burgers with Lemon Aioli</span><span>25KM</span></li>
             <li><span>Ultimate Veggie Burgers</span><span>35KM</span></li>
@@ -64,8 +64,8 @@
             <li><span>Bacon-and-Kimchi Burgers</span><span>35KM</span></li>
          </ul>
       </div>
-      <div id="PastaText" class="h-40 w-full text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl">Pasta</div></div>
-      <div id="PastaDish" class="pl-3 text-3xl mt-16 MainDishes">
+      <div id="PastaText" class="select-none h-40 w-full lg:text-6xl text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl lg:mr-32">Pasta</div></div>
+      <div id="PastaDish" class="pl-3 lg:text-xl text-3xl mt-16 MainDishes">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Dirty Martini Pasta</span><span>25KM</span></li>
             <li><span>Creamy Chicken Piccata With Gnocchi</span><span>35KM</span></li>
@@ -81,8 +81,8 @@
             <li><span>Roasted Butternut Squash Pasta</span><span>35KM</span></li>    
          </ul>
       </div>
-      <div id="DesertsText" class="h-40 w-full text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl">Desserts</div></div>
-      <div id="DesertsDish" class="pl-3 text-3xl mt-16 DessertDishes">
+      <div id="DesertsText" class="select-none h-40 w-full lg:text-6xl text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl lg:mr-32">Desserts</div></div>
+      <div id="DesertsDish" class="pl-3 lg:text-xl text-3xl mt-16 DessertDishes">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Buttermilk Bundt Cake with Lemon Glaze</span><span>25KM</span></li>
             <li><span>Classic Carrot Cake with Fluffy Cream Cheese Frosting</span><span>35KM</span></li>
@@ -94,9 +94,9 @@
             <li><span>Peach Crumble</span><span>35KM</span></li>
          </ul>
       </div>
-      <div id="DrinksText" class="h-40 w-full text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl">Drinks</div></div>
-      <div class="bg-orange-200 flex w-96 text-5xl text-white justify-end pr-7 pb-4 pt-3 rounded-r-xl mt-8">Non-alcohol</div>
-      <div id="DrinksDish" class="pl-3 text-3xl mt-16 nonAlc">
+      <div id="DrinksText" class="select-none h-40 w-full lg:text-6xl text-8xl font-pictureText flex justify-center items-center text-white " ><div class="bg-orange-200 pt-7 pb-1 pl-7 pr-7 rounded-2xl lg:mr-32">Drinks</div></div>
+      <div class="select-none bg-orange-200 flex w-96 lg:text-3xl text-5xl text-white justify-end pr-7 pb-4 pt-3 rounded-r-xl mt-8">Non-alcohol</div>
+      <div id="DrinksDish" class="pl-3 lg:text-xl text-3xl mt-16 nonAlc">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Coca-Cola</span><span>25KM</span></li>
             <li><span>Fanta</span><span>25KM</span></li>
@@ -106,8 +106,8 @@
             <li><span>Coffee</span><span>25KM</span></li>
          </ul>
       </div>
-      <div class="bg-orange-200 flex w-96 text-5xl text-white justify-end pr-7 pb-4 pt-3 rounded-r-xl mt-8">Alcohol drinks</div>
-      <div id="DrinksDish" class="pl-3 text-3xl mt-16 nonAlc">
+      <div class="select-none bg-orange-200 flex w-96 lg:text-3xl text-5xl text-white justify-end pr-7 pb-4 pt-3 rounded-r-xl mt-8">Alcohol drinks</div>
+      <div id="DrinksDish" class="pl-3 lg:text-xl text-3xl mt-16 nonAlc">
          <ul class="pa-dot-leaders flex gap-8 flex-col">
             <li><span>Beer</span><span>25KM</span></li>
             <li><span>Wine</span><span>25KM</span></li>
