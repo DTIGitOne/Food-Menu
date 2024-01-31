@@ -6,22 +6,22 @@
    <link rel="stylesheet" href="/public/styles2.css">
 </head>
 <body class="h-full w-full m-0">
-   <div id="loadLogo" class="h-full w-full m-0 bg-orange-100 flex justify-center items-center z-100 absolute animationLoad">
+   <div id="loadLogo" class="h-full w-full m-0 bg-orange-100 flex justify-center items-center z-100 absolute fixed animationLoad">
       <img src="/Icons/Chef.png" id="logoPic">
    </div>
-   <div id="root4" class="h-auto w-full m-0 bg-orange-100 hidden flex-col relative">
+   <div id="root4" class="h-auto w-full m-0 invisible bg-orange-100  flex-col relative">
       <div id="selctionMenu" class="selctionMenu w-full flex items-center hover:bg-orange-200">
          <img src="/Icons/icons8-menu-100.png" width="80px" height="80px" class="inline m-10">
       </div>
-      <div id="popUpMenu" class="popUpMenu">
+      <div id="popUpMenu" class="popUpMenu lg:invisible">
          <a href="/public/Main-Menu/index.html" id="menuPage" class="popUpInner hover:bg-orange-200">Menu Page</a>
-         <a href="/public/Contact/index2.html" class="popUpInner hover:bg-orange-200">Location and Contact</a>
-         <a href="/public/About/about.html" class="popUpInner hover:bg-orange-200">About</a>
+         <a href="/public/Contact/index2.html" id="locationContact"  class="popUpInner hover:bg-orange-200">Location and Contact</a>
+         <a href="/public/About/about.html" id="about"  class="popUpInner hover:bg-orange-200">About</a>
       </div>
       <div id="popUpMenu5" class="popUpMenu"></div>
       <div id="divall">
          <div id="aboutBox" class="flex justify-center items-center">
-            <div class="font-pictureText lg:text-6x1 text-9xl text-white bg-orange-200 inline pl-9 pr-9 pt-6 rounded-xl">About Us</div>
+            <div id="aboutTextUpper" class="font-pictureText text-9xl text-white bg-orange-200 inline pl-9 pr-9 pt-6 rounded-xl">About Us</div>
          </div>
          <div id="aboutText" class="flex justify-center items-center">
             <div class="textBox bg-orange-200"><span class="font-bold">Lorem </span>ipsum dolor sit amet consectetur adipisicing elit. Minima accusamus assumenda commodi minus fuga? Ratione magni nisi iusto distinctio aliquam. Facere qui amet fugiat adipisci, molestias impedit numquam fuga odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, suscipit. Esse consequatur dolor blanditiis maxime eum voluptatum repellendus corrupti quis in quam, voluptates alias minus quisquam officia distinctio, pariatur ab.
@@ -29,7 +29,7 @@
             </div>
          </div>
          <div id="picBox" class="flex justify-center items-center">
-            <div class="font-pictureText text-9xl text-white bg-orange-200 inline pl-9 pr-9 pt-6 rounded-xl">Our pictures</div>
+            <div id="ourPicUpper" class="font-pictureText text-9xl text-white bg-orange-200 inline pl-9 pr-9 pt-6 rounded-xl">Our pictures</div>
          </div>
          <div id="picturesBox" class="flex justify-center items-center">
             <section class="container1">
@@ -48,8 +48,8 @@
             </section>
          </div>
          <div id="igLinkBox" class="flex gap-12 flex-col justify-center items-center">
-            <div class="font-pictureText text-7xl text-white bg-orange-200 inline w-full pb-4 text-center pt-6 rounded-x1">More pictures here:</div>
-            <a href="https://www.instagram.com/gordonramsayrestaurants/?hl=en">
+            <div id="morePic" class="font-pictureText text-7xl text-white bg-orange-200 inline w-full pb-4 text-center pt-6 rounded-x1">More pictures here:</div>
+            <a href="https://www.instagram.com/gordonramsayrestaurants/?hl=en" id="igLogo2">
                <img src="/Icons/instagram.png" width="150px" height="150px">
             </a>
          </div>

@@ -14,6 +14,9 @@ function hideLoad() {
       setInterval(() => {
          loadLogo.remove();
       }, 800);
+      setInterval(() => {
+         popUpMenu.className = "popUpMenu lg:visible";
+      }, 300);
   }
   setTimeout(siteLoadFunc, 1500);
 
